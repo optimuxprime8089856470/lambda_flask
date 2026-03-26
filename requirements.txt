@@ -3,7 +3,6 @@ Flask-SQLAlchemy
 Flask-Login
 Flask-Mail
 itsdangerous
-flask-limiter
+Flask-Limiter
+Werkzeug
 serverless-wsgi
-Werkzeugd
-flask-mail

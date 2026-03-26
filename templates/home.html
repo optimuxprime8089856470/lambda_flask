@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Welcome</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #1e1e2f, #12121a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: #1f1f2e;
+            padding: 50px 40px;
+            border-radius: 16px;
+            width: 360px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 26px;
+        }
+
+        p {
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 13px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .login-btn {
+            background: #6c63ff;
+            color: #fff;
+        }
+
+        .login-btn:hover {
+            background: #5a52e0;
+        }
+
+        .register-btn {
+            background: transparent;
+            color: #6c63ff;
+            border: 1px solid #6c63ff;
+        }
+
+        .register-btn:hover {
+            background: #6c63ff;
+            color: #fff;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Welcome 👋</h1>
+        <p>Login or create an account to continue</p>
+
+        <a href="{{ url_for('index') }}" class="btn login-btn">Login</a>
+        <a href="{{ url_for('register') }}" class="btn register-btn">Register</a>
+
+        <footer>
+            © 2026 Your App
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<form action="{{ url_for('register') }}" method="post">
+
+    <div class="input-box">
+        <input type="text" name="username" required autocomplete="off">
+        <label>Username</label>
+    </div>
+
+    <div class="input-box">
+        <input type="email" name="email" required autocomplete="off">
+        <label>Email</label>
+    </div>
+
+    <div class="input-box">
+        <input type="password" name="password" required autocomplete="new-password"
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?{}|<>]).{8,}">
+        <label>Password</label>
+    </div>
+
+    <p style="color:#888; font-size:12px; margin-bottom:10px;">
+        Password must contain uppercase, lowercase, number & special character.
+    </p>
+
+    <button type="submit">Register</button>
+</form>
+
+{% if error %}
+<p class="error">{{ error }}</p>
+{% endif %}
+
+<p class="switch">
+    Already have an account?
+    <a href="{{ url_for('index') }}">Login</a>
+</p>
+
+<p class="switch">
+    <a href="{{ url_for('home') }}">← Back to Home</a>
+</p>

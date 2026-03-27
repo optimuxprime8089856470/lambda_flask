@@ -46,7 +46,7 @@ This project focuses on doing the basics **correctly**, not just making them wor
 ### 1. Clone the repository
 
 ```bash id="cln01"
-git clone https://github.com/optimuxprime8089856470/flask-auth-system.git
+git clone https://github.com/optimuxprime8089856470/lambda_flask.git
 cd flask-auth-system
 ```
 

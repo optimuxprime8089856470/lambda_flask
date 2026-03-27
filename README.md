@@ -47,7 +47,7 @@ This project focuses on doing the basics **correctly**, not just making them wor
 
 ```bash id="cln01"
 git clone https://github.com/optimuxprime8089856470/lambda_flask.git
-cd flask-auth-system
+cd lambda_flask
 ```
 
 ### 2. Create virtual environment
